@@ -1,0 +1,142 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "Recette de pancakes aux fruits frais",
+      "description": "Découvrez comment préparer des pancakes moelleux accompagnés de fruits frais de saison.",
+      "image": "https://th.bing.com/th/id/R.74cb7769b8e15295142b5aad892a24c6?rik=UFNop7ExqUHq7Q&pid=ImgRaw&r=0",
+      "category": "Breakfast",
+      "state": "new"
+    },
+    {
+      "id": "2",
+      "title": "Guide ultime pour un déjeuner équilibré au travail",
+      "description": "Apprenez à préparer des repas équilibrés et pratiques à emporter pour votre pause déjeuner.",
+      "image": "https://images.prismic.io/cadremploi-edito/MDQ3ODEyMDMtMTFlZC00ODgwLTlhYmYtZmM0MWZlYWE1ZTMw_shutterstock_1016932243.jpg?auto=compress",
+      "category": "Lunch",
+      "state": "best"
+    },
+    {
+      "id": "3",
+      "title": "Recette traditionnelle de boeuf bourguignon",
+      "description": "Suivez cette recette classique pour préparer un délicieux boeuf bourguignon à la maison.",
+      "image": "https://th.bing.com/th/id/OIP.buNLfzHv0jt5oPrBytkRtwHaE8?rs=1&pid=ImgDetMain",
+      "category": "Dinner",
+      "state": "normal"
+    },
+    {
+      "id": "4",
+      "title": "Cocktail rafraîchissant au melon et à la menthe",
+      "description": "Découvrez comment préparer ce cocktail estival rafraîchissant, parfait pour se désaltérer.",
+      "image": "https://th.bing.com/th/id/R.361bd8d8090d7575607c337b5e8572bf?rik=W6ZaxbYBQcsgwQ&pid=ImgRaw&r=0",
+      "category": "Drink",
+      "state": "new"
+    },
+    {
+      "id": "5",
+      "title": "Idées de smoothies santé pour le petit-déjeuner",
+      "description": "Explorez plusieurs recettes de smoothies nutritifs et délicieux à savourer au petit-déjeuner.",
+      "image": "https://th.bing.com/th/id/OIP.IfX78M_Y7Xyn1VZJR8wR_QAAAA?rs=1&pid=ImgDetMain",
+      "category": "Breakfast",
+      "state": "best"
+    },
+    {
+      "id": "6",
+      "title": "Salades fraîches et créatives pour le déjeuner",
+      "description": "Découvrez des idées de salades colorées et variées pour des déjeuners sains et savoureux.",
+      "image": "https://www.halfbakedharvest.com/wp-content/uploads/2016/07/Summer-Abundance-Salad-5-700x1050.jpg",
+      "category": "Lunch",
+      "state": "normal"
+    },
+    {
+      "id": "7",
+      "title": "Recette facile de lasagnes maison",
+      "description": "Apprenez à préparer des lasagnes savoureuses avec cette recette simple et délicieuse.",
+      "image": "https://img.cuisineaz.com/660x660/2013/12/20/i2321-lasagnes-maison.jpeg",
+      "category": "Dinner",
+      "state": "new"
+    },
+    {
+      "id": "8",
+      "title": "Smoothies énergisants pour après l'effort",
+      "description": "Découvrez des recettes de smoothies riches en protéines et en énergie pour récupérer après le sport.",
+      "image": "https://receitinhas.com.br/wp-content/uploads/2018/02/iStock-629655982.jpg",
+      "category": "Drink",
+      "state": "best"
+    },
+    {
+      "id": "9",
+      "title": "Recette de crêpes au chocolat et à la banane",
+      "description": "Préparez des crêpes gourmandes avec une touche de chocolat et des tranches de banane.",
+      "image": "https://www.elle-et-vire.com/uploads/cache/1920x1200/uploads/recip/recipe/1008/5e1db5d6ed21a_istock-1132230754.jpg",
+      "category": "Breakfast",
+      "state": "normal"
+    },
+    {
+      "id": "10",
+      "title": "Plats végétariens simples et savoureux pour le déjeuner",
+      "description": "Explorez des idées de plats végétariens faciles à préparer pour vos repas du midi.",
+      "image": "https://i.pinimg.com/736x/98/77/be/9877be8d2e3b0a31a1fa66fcf96d28ba.jpg",
+      "category": "Lunch",
+      "state": "best"
+    },
+    {
+      "id": "11",
+      "title": "Recette de poulet rôti aux herbes et légumes",
+      "description": "Apprenez à cuisiner un délicieux poulet rôti accompagné d'herbes fraîches et de légumes de saison.",
+      "image": "https://lifemadesweeter.com/wp-content/uploads/One-Sheet-Pan-Teriyaki-Chicken-with-Vegetables-makes-the-perfect-easy-weeknight-meal-2-e1475316919212-380x450.jpg",
+      "category": "Dinner",
+      "state": "best"
+    },
+    {
+      "id": "12",
+      "title": "Cocktails sans alcool pour les soirées d'été",
+      "description": "Découvrez des recettes de cocktails rafraîchissants et sans alcool à savourer lors de vos soirées estivales.",
+      "image": "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/14651/cocktails-sans-alcool-tag-AdobeStock_260702554.jpg",
+      "category": "Drink",
+      "state": "normal"
+    },
+    {
+      "id": "e75e",
+      "title": "",
+      "description": "",
+      "image": "",
+      "category": "",
+      "state": "new"
+    },
+    {
+      "id": "eaac",
+      "title": "test",
+      "description": "fffff",
+      "image": "fffffffffffffffffffffff",
+      "category": "",
+      "state": "new"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "Breakfast",
+      "description": "Des repas délicieux pour bien commencer la journée.",
+      "image": "https://californiagrown.org/wp-content/uploads/2020/12/DSC_0387-scaled.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Lunch",
+      "description": "Délicieuses options pour le déjeuner.",
+      "image": "https://alexandrasavina.com/wp-content/uploads/2019/09/best-lunch-restaurants-in-Omaha.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Dinner",
+      "description": "Repas copieux pour un dîner satisfaisant.",
+      "image": "https://th.bing.com/th/id/OIP.V9UOc5g239f5RtdK7BnUmwHaE7?pid=ImgDet&w=474&h=315&rs=1"
+    },
+    {
+      "id": "4",
+      "title": "Drink",
+      "description": "Boissons rafraîchissantes pour toutes les occasions.",
+      "image": "https://symposiumcafe.com/images/menu/drinks-menu/ontario-restaurants-drinks-menu-juices.jpg"
+    }
+  ]
+}
