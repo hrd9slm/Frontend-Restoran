@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
@@ -12,6 +13,7 @@ import { ArticlesProvider } from './contextApi/ArticlesContext';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
+  console.log(process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET);
   return (
     <Router>
       <ArticlesProvider>
@@ -23,7 +25,7 @@ function App() {
           <Route path="/article/:id" element={<ArticleDetails />} />
           <Route path="/articles/:category" element={<GetArticles />} />
         </Routes>
-        <ToastContainer />
+        <ToastContainer/>
       </ArticlesProvider>
     </Router>
   );

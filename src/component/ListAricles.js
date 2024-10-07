@@ -15,7 +15,7 @@ function useQuery() {
 function ListeArticles({ category }) {
   const { articles, deleteArticle, updateArticle } = useArticlesContext();
   const query = useQuery();
-  const keyword = query.get('keyword') || '';
+  const keyword = query.get('keyword') ;
 
   const [show, setShow] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState(null);
@@ -49,20 +49,12 @@ function ListeArticles({ category }) {
     return matchesCategory && matchesKeyword;
   });
 
-  const group = (arr, size) => {
-    return Array.from({ length: Math.ceil(arr.length / size) }, (_, index) =>
-      arr.slice(index * size, index * size + size)
-    );
-  };
-
-  const groupedArticles = group(filteredArticles, 3);
 
   return (
     <>
-      {groupedArticles.map((group, index) => (
-        <Row key={index} className="mb-3">
-          {group.map((article) => (
-            <Col key={article.id} className="mb-4">
+     <Row  className="mb-3">    
+          {filteredArticles.map((article) => (
+            <Col key={article.id} md={4} className="mb-4">
               <Card className="h-100">
                 <Card.Img
                   variant="top"
@@ -83,8 +75,7 @@ function ListeArticles({ category }) {
             </Col>
           ))}
         </Row>
-      ))}
-
+     
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Update Article</Modal.Title>

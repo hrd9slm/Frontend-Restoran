@@ -1,25 +1,41 @@
 import React, { useState } from "react";
 import { useArticlesContext } from "../contextApi/ArticlesContext";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import axios from "axios";
 
 function AddArticle() {
   const { addArticle, categories } = useArticlesContext();
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
   const [category, setCategory] = useState(categories[0]?.name || "");
   const [state, setState] = useState("new");
-
-  const handleSubmit = (e) => {
+  const perset=process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET;
+  const name=process.env.REACT_APP_CLOUDINARY_CLOUD_NAME;
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const newArticle = { title, description, image, category, state };
+    const formData = new FormData();
+  
+    formData.append("file", image);
+    formData.append(
+      "upload_preset",
+      perset
+    );
+    const img = await axios.post(
+      `https://api.cloudinary.com/v1_1/${name}/upload`,
+      formData
+    );
+    const newArticle = { title, description, image:img.data.secure_url, category, state };
+
     addArticle(newArticle);
-    navigate("/");
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
   };
 
   return (
@@ -52,10 +68,10 @@ function AddArticle() {
         <Form.Group controlId="formImage" className="mt-3">
           <Form.Label>Image URL</Form.Label>
           <Form.Control
-            type="text"
+            type="file"
             placeholder="Enter image URL"
-            value={image}
-            onChange={(e) => setImage(e.target.value)}
+           
+            onChange={(e) => setImage(e.target.files[0])}
             required
           />
         </Form.Group>
@@ -82,7 +98,6 @@ function AddArticle() {
             as="select"
             value={state}
             onChange={(e) => setState(e.target.value)}
-            
           >
             <option value="new">New</option>
             <option value="best">Best</option>
